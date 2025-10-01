@@ -5,65 +5,68 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Callum's Cleaning Service</title>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: white;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    nav {
-      background: #007BFF;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    header {
-      text-align: center;
-      padding: 2rem;
-    }
-    header img {
-      max-width: 200px;
-      height: auto;
-    }
-    footer {
-      background: #f1f1f1;
-      padding: 1rem;
-      text-align: center;
-      margin-top: 2rem;
-    }
-  </style>
 </head>
 <body>
 
   <!-- Navigation Bar -->
   <nav>
-    <a href="#">Homepage</a>
+    <div class="nav-container">
+      <img src="assets/images/logo.png" alt="Callum's Cleaning Service Logo" class="nav-logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- Header -->
-  <header>
-    <img src="assets/images/logo.png" alt="Callum's Cleaning Service Logo">
-    <h1>Callum's Cleaning Service</h1>
-    <p>Reliable cleaning for homes and offices</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Callum's Cleaning Service</h1>
+      <p>Reliable cleaning for homes and offices — sparkling results every time.</p>
+      <a href="#contact" class="btn">Get a Quote</a>
+    </div>
   </header>
 
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a passionate cleaning service dedicated to making your home or workplace spotless. We combine professionalism, attention to detail, and eco-friendly practices to deliver outstanding results.</p>
+    <p>Our team has years of experience and uses the best products to ensure your space feels fresh, safe, and clean every time.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Home Cleaning</h3>
+        <p>From living rooms to kitchens — we clean it all with care and precision.</p>
+      </div>
+      <div class="card">
+        <h3>Office Cleaning</h3>
+        <p>Professional cleaning to keep your workspace productive and presentable.</p>
+      </div>
+      <div class="card">
+        <h3>Deep Cleaning</h3>
+        <p>Detailed cleaning that reaches places no regular clean can touch.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
-  <main>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: callum.coetzee@gmail.com</p>
-      <p>Phone: 0211756330</p>
-    </section>
-  </main>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:callum.coetzee@gmail.com">callum.coetzee@gmail.com</a></p>
+    <p>Phone: <a href="tel:+64211756330">021 175 6330</a></p>
+    <p>We’re ready to make your space sparkle!</p>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; <span id="year"></span> Callum's Cleaning Service</p>
+    <p>&copy; <span id="year"></span> Callum's Cleaning Service. All rights reserved.</p>
   </footer>
 
   <script>

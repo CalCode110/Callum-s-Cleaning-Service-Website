@@ -1,6 +1,74 @@
 <!doctype html>
-<html>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Callum's Cleaning Service</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #007BFF;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+    header img {
+      max-width: 200px;
+      height: auto;
+    }
+    footer {
+      background: #f1f1f1;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#">Homepage</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="assets/images/logo.png" alt="Callum's Cleaning Service Logo">
+    <h1>Callum's Cleaning Service</h1>
+    <p>Reliable cleaning for homes and offices</p>
+  </header>
+
+  <!-- Contact Section -->
+  <main>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: callum.coetzee@gmail.com</p>
+      <p>Phone: 0211756330</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Callum's Cleaning Service</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
 </html>

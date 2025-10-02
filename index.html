@@ -4,13 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Callum's Cleaning Service</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/style.css"> <!-- Note: corrected from styles.css to style.css -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <!-- Navigation Bar -->
   <nav>
     <div class="nav-container">
@@ -28,44 +27,55 @@
   <header id="home" class="hero">
     <div class="hero-content">
       <h1>Callum's Cleaning Service</h1>
-      <p>Reliable cleaning for homes and offices — sparkling results every time.</p>
-      <a href="#contact" class="btn">Get a Quote</a>
+      <p>Professional Cleaning Solutions for Your Home & Office</p>
+      <a href="#contact" class="btn">Get a Free Quote</a>
     </div>
-    <div class="hero-background"></div>
+    <div class="hero-shape"></div>
   </header>
-
-  <!-- About Section -->
-  <section id="about" class="about fade-in">
-    <h2>About Us</h2>
-    <p>We are a passionate cleaning service dedicated to making your home or workplace spotless. We combine professionalism, attention to detail, and eco-friendly practices to deliver outstanding results.</p>
-    <p>Our team has years of experience and uses the best products to ensure your space feels fresh, safe, and clean every time.</p>
-  </section>
 
   <!-- Services Section -->
   <section id="services" class="services fade-in">
-    <h2>Our Services</h2>
+    <div class="section-header">
+      <h2>Our Services</h2>
+      <div class="accent-line"></div>
+    </div>
     <div class="service-cards">
       <div class="card">
+        <div class="card-image-placeholder"></div>
         <h3>Home Cleaning</h3>
         <p>From living rooms to kitchens — we clean it all with care and precision.</p>
       </div>
       <div class="card">
+        <div class="card-image-placeholder"></div>
         <h3>Office Cleaning</h3>
         <p>Professional cleaning to keep your workspace productive and presentable.</p>
       </div>
       <div class="card">
+        <div class="card-image-placeholder"></div>
         <h3>Deep Cleaning</h3>
         <p>Detailed cleaning that reaches places no regular clean can touch.</p>
       </div>
     </div>
   </section>
 
+  <!-- About Section -->
+  <section id="about" class="about fade-in">
+    <div class="section-header">
+      <h2>About Us</h2>
+      <div class="accent-line"></div>
+    </div>
+    <p>We are a passionate cleaning service dedicated to making your home or workplace spotless. We combine professionalism, attention to detail, and eco-friendly practices to deliver outstanding results.</p>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="contact fade-in">
-    <h2>Contact Us</h2>
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <div class="accent-line"></div>
+    </div>
     <p>Email: <a href="mailto:callum.coetzee@gmail.com">callum.coetzee@gmail.com</a></p>
     <p>Phone: <a href="tel:+64211756330">021 175 6330</a></p>
-    <p>We’re ready to make your space sparkle!</p>
+    <p>We're ready to make your space sparkle!</p>
   </section>
 
   <!-- Footer -->
@@ -99,6 +109,5 @@
 
     faders.forEach(fader => { appearOnScroll.observe(fader); });
   </script>
-
 </body>
 </html>
